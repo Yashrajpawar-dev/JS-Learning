@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+    .home-button{
+          height: 30px;
+        width: 200px;
+
+    }
+    .home{
+           display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+.tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+    
+    form{
+        
+    }
+</style>
+<body>
+     <div class="home">
+      <button class="home-button">Home</button>
+    </div>
+    <div class="tittle"><h4>BMI Calculator</h4></div>
+    <form>
+    <p><label>Height in cm</label><input type="text" id="height"></p>
+    <p><label>Weight in kg</label><input type="text" id="weight"></p>
+    <p><button type="submit" id="calculate">Calculate BMI</button></p>
+    <div id="result"></div>
+    <h4>BMI Weight guide</h4>
+    <div class="weight-guide">
+      <p>Underweight: BMI < 18.5</p>
+      <p>Normal weight: 18.5 ≤ BMI < 24.9</p>
+      <p>Overweight: 25 ≤ BMI < 29.9</p>
+      <p>Obesity: BMI ≥ 30</p>
+    </div>
+    </form>
+
+
+   
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
