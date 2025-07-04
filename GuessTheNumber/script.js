@@ -70,7 +70,7 @@ newGameButton.addEventListener('click', function(e){
     numGuesses =1 
     guessSlot.innerHTML = ''
     remaining.innerHTML = '10'
-    userInput.removeAttribute('disabled')
+    guessField.removeAttribute('disabled')
     startover.removeChild(p)
     playGame = true
 
@@ -80,8 +80,9 @@ function endGame(){
 guessField.value = ''
 guessField.setAttribute('disabled', '')
 p.classList.add('button')
-p.innerHTML = `<h2 id = "newGame">New Game</h2>`
+p.innerHTML = `<button id = "newGame">New Game</button>`
 startover.appendChild(p)
 playGame =  false;
+newGame();
 
 }
