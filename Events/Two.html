@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Best Program</h1>
+     <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+const start = document.querySelector('#start');
+const stop = document.querySelector('#stop');
+let intervalId
+start.addEventListener('click', function(e){
+    const sayDate = function(){
+        const textToPrint = "yash " + new Date().toLocaleTimeString()
+    const clear =    document.querySelector('h1').innerHTML = textToPrint;
+      }
+ intervalId = setInterval(sayDate,1000)
+})
+     stop.addEventListener('click', function(e){
+    clearInterval(intervalId)
+    const clear = document.querySelector('h1').innerHTML = "Best Program";
+
+    
+     })
+    </script>
+</body>
+</html>

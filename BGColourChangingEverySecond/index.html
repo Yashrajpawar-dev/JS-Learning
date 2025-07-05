@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+body{
+    background: black;
+}
+
+.home-button{
+          height: 30px;
+        width: 200px;
+        background: orange;
+
+    }
+    .home{
+           display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    height: 100vh;
+    }
+    #banner{
+        font-size: x-large;
+        color: white;
+    }
+    #button{
+        font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+      margin: 10px ;
+      border-radius: 10px;
+
+    }
+h2{
+    color: white;
+}
+#start{
+font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+      margin: 10px ;
+      border-radius: 10px;
+
+}
+#stop{
+    font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+      margin: 10px ;
+      border-radius: 10px;
+
+}
+        </style>
+<body>
+     <div class="home">
+      <button class="home-button">Home</button>
+    </div>
+
+
+
+       <h2>Start should Change the background color every second</h2>
+
+       <Button id="start">Start</Button>
+       <Button id="stop">Stop</Button>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
