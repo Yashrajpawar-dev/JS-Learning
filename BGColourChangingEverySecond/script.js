@@ -16,13 +16,13 @@ const changeColor = function(){
     function changed(){
     document.body.style.backgroundColor = randomColor();
 }
-  intervelID = setInterval(changed,3000)
+ if(!intervelID){ intervelID = setInterval(changed,3000)}
 }
 
 
 stopChangingColor = function(){
     clearInterval(intervelID)
-    document.body.style.backgroundColor = 'black'
+    intervelID = null;
 }
 const start = document.querySelector('#start')
 const Stop = document.querySelector('#stop')

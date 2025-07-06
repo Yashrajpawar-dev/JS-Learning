@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "photo"></div>
+    <div id = "Followers"></div>
+</body>
+<script>
+    const photo = document.querySelector('#photo')
+    const Followers = document.querySelector('#Followers')
+
+
+    const request = new XMLHttpRequest();
+   const requestURL = 'https://api.github.com/users/Yashrajpawar-dev'
+   request.open('GET', requestURL)
+   request.onreadystatechange = function(){
+        console.log(request.readyState);
+        if (request.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            photo.innerHTML = `<img src="${data.avatar_url}" alt="Profile Photo">`
+            Followers.innerHTML = `<p>Followers: ${data.followers}</p>`
+        }};
+        request.send()
+</script>
+</html>
